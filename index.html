@@ -1,0 +1,4 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v4.5.18"><title>Astro</title><script type="module">const c="05a65e857bb759e4370d";async function a(){const t=await fetch(`https://github.com/login/device/code?client_id=${c}`,{method:"POST",headers:{Accept:"application/json"}}).then(e=>e.json());console.log({data:t})}document.querySelector("button").addEventListener("click",()=>a());window.checkAccess=async function(t){const n=await fetch(`https://github.com/login/oauth/access_token?client_id=${c}&device_code=${t}&grant_type=urn:ietf:params:oauth:grant-type:device_code`,{method:"POST",headers:{Accept:"application/json"}}).then(o=>o.json());console.log({data:n})};
+</script></head> <body> <h1>Astro</h1> <button>login</button>
+https://github.com/login/device
+</body></html>
